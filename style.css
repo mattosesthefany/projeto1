@@ -1,0 +1,329 @@
+:root {
+    --fonte-principal: 'Pacifico', cursive;
+    --cor-plano: #eebb89
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('imagens/bg_light.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    height: 80px; /* Ajustar a altura da header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    background-color: #eebb89;
+    font-family: var(--fonte-principal);
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    margin-right: 20px;
+    transition: transform .4s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.div_titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__titulo {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.container__subtitulo {
+    font-size: 16px;
+    margin: 0;
+}
+
+.titulo-linha {
+    border: none;
+    border-top: 2px solid black;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    text-align: center;
+}
+
+.input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.input:focus {
+    border: 2px solid grey;
+}
+
+.texto-icon {
+    display: flex;
+    align-items: center;
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto__linha1 {
+    font-size: 20px;
+    margin: 0;
+    font-family: var(--fonte-principal);
+}
+
+.texto__linha2 {
+    font-size: 20px;
+    margin: 0;
+    font-family: var(--fonte-principal);
+}
+
+.icon {
+    width: 50px;
+    margin-left: 20px;
+    transition: transform .4s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+
+.filmeprincipal {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 100px;
+    filter: brightness(1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 10);
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.filmeprincipal:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 200);
+}
+
+.catalogo001 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.size_img {
+    width: 200px;
+    height: 170px;
+    border-radius: 50px;
+    filter: brightness(.6);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 10);
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.size_img:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 200);
+}
+
+.catalogo002 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+footer {
+    background-color: #eebb89;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+    font-family: var(--fonte-principal);
+}
+
+.plano-section {
+    background-image: url(imagens/bg_dark.png);
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+}
+
+.plano-title {
+    font-family: var(--fonte-principal);
+    color: #eebb89;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+
+.plano-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plano-card {
+    background-color: #eebb89;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.plano-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plano-nome {
+    font-family: var(--fonte-principal);
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+.plano-preco {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.plano-descricao {
+    font-size: 16px;
+    margin: 0;
+}
+
+.escolher-section {
+    background-image: url(imagens/bg_dark.png);
+    padding: 50px 2%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+}
+
+.escolher-title {
+    font-family: var(--fonte-principal);
+    color: #eebb89;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.escolher-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #efefef;
+}
+
+.escolher-texto {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #eebb89;
+}
+
+.escolher-lista {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.escolher-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #eebb89;
+}
+
+.beneficios-section {
+    background-image: url(imagens/bg_dark.png);
+    padding: 50px 2%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+}
+
+.beneficios-title {
+    font-family: var(--fonte-principal);
+    color: #eebb89;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.beneficios-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.beneficio-card {
+    background-color: #eebb89;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.beneficio-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.beneficio-nome {
+    font-family: var(--fonte-principal);
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    color: var(--cor-plano-texto);
+}
+
+.beneficio-descricao {
+    font-size: 16px;
+    margin: 0;
+    color: var(--cor-plano-texto);
+}
